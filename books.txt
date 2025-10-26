@@ -1,0 +1,6 @@
+1984,George Orwell,Dystopia,Available
+Brave New World,Aldous Huxley,Dystopia,Available
+The Hobbit,J.R.R. Tolkien,Fantasy,Borrowed,1,2025-05-09
+Pride and Prejudice,Jane Austen,Classic,Available
+Harry Potter,J.K. Rowling,Fantasy,Available
+Dune,Frank Herbert,Sci-Fi,Available
