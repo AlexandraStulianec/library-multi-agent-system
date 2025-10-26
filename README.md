@@ -13,7 +13,7 @@ This project is a multi-agent system built using **JADE** to manage a library sy
 ## Required
 
 * JADE Framework
-* An IDE - for this I used IntelliJ IDEA
+* An IDE
 
 ---
 
