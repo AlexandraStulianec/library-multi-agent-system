@@ -1,0 +1,6 @@
+The Great Gatsby,F. Scott Fitzgerald,Fiction,Available
+1984,George Orwell,Dystopian,Available
+To Kill a Mockingbird,Harper Lee,Fiction,Available
+The Hobbit,J.R.R. Tolkien,Fantasy,Available
+Pride and Prejudice,Jane Austen,Romance,Available
+Dune,Frank Herbert,Sci-Fi,Borrowed,U001,2026-05-08

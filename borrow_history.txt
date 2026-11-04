@@ -1,0 +1,8 @@
+The Great Gatsby,Fiction,U001,2026-04-10,2026-04-20
+1984,Dystopian,U003,2026-04-05,NULL
+The Hobbit,Fantasy,U002,2026-04-01,2026-04-15
+Pride and Prejudice,Romance,U004,2026-04-08,2026-04-22
+Dune,Sci-Fi,U001,2026-04-24,NULL
+1984,Dystopian,U005,2026-05-13,2026-05-13
+The Hobbit,Fantasy,U005,2026-05-13,2026-05-13
+Pride and Prejudice,Romance,U005,2026-05-13,2026-05-13
