@@ -1,4 +1,6 @@
-Library Agent System
+# library-multi-agent-system
+
+## Library Agent System (JADE-based)
 
 This project is a multi-agent system built using **JADE** to manage a library system. The system can:
 
