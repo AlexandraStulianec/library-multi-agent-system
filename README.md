@@ -52,31 +52,32 @@ The FSM in BookManagerAgent makes decisions in sequence:
 3. Has the user already borrowed 3 books? -> if yes, reject.
 4. Otherwise, allow borrowing.
 
-      Start
-        |
-        |
+   ```text
+Start
+  │
+  ▼
 1. CheckAvailability
-   │
-   --- Book available? --- YES --> 2. CheckFines
-   │
-   --- NO --> RejectNotAvailable  (final)
-                │
+  │
+  ├── Book available? ── YES ──▶ 2. CheckFines
+  │
+  └── NO ──▶ RejectNotAvailable (final)
                 └─ "Book not available"
+
 2. CheckFines
-   │
-   --- No unpaid fines? --- YES --> 3. CheckBorrowLimit
-   │
-   --- Has fines --> RejectHasFines  (final)
-                        - "You have unpaid fines"
+  │
+  ├── No unpaid fines? ── YES ──▶ 3. CheckBorrowLimit
+  │
+  └── Has fines ──▶ RejectHasFines (final)
+                       └─ "You have unpaid fines"
 
 3. CheckBorrowLimit
-   │
-   --- Borrowed < 3 books? --- YES --> DoBorrow  (final)
-   │                                   - "Success, due date set"
-   │
-   --- Borrowed >= 3 books --> RejectAtLimit  (final)
-                                  - "Borrowing limit reached (max 3 books)"
-
+  │
+  ├── Borrowed < 3 books? ── YES ──▶ DoBorrow (final)
+  │                                     └─ "Success, due date set"
+  │
+  └── Borrowed >= 3 books ──▶ RejectAtLimit (final)
+                                 └─ "Borrowing limit reached (max 3 books)"
+```
 ---
 
 ## Agents (5 types)
