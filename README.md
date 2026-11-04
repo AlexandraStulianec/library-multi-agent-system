@@ -1,7 +1,5 @@
 # library-multi-agent-system
 
-## Library Agent System (JADE-based)
-
 This project is a multi-agent system built using **JADE** to manage a library system. The system can:
 
 - Borrow and return books based on user ID and book title.
@@ -10,14 +8,12 @@ This project is a multi-agent system built using **JADE** to manage a library sy
 - Track inventory, add new books, and show popular books.
 - Show user statistics and borrowing history.
 
----
 
 ## Required
 
 - JADE framework
 - An IDE (IntelliJ IDEA is used here)
 
----
 
 ## File Structure
 
@@ -26,14 +22,12 @@ This project is a multi-agent system built using **JADE** to manage a library sy
 - `fines.txt` – Format: userId, fineAmount  
 - `borrow_history.txt` – Format: title, genre, userId, borrowDate, returnDate (NULL if not returned)
 
----
 
 ## How to Run
 
 1. Download JADE and add it to your project’s module settings.
 2. Run `LibraryGUI.java`. This starts the GUI and the JADE platform.
 
----
 
 ## What It Contains
 
@@ -52,7 +46,7 @@ The FSM in BookManagerAgent makes decisions in sequence:
 3. Has the user already borrowed 3 books? -> if yes, reject.
 4. Otherwise, allow borrowing.
 
-   ```text
+```text
 Start
   │
   ▼
@@ -78,7 +72,6 @@ Start
   └── Borrowed >= 3 books ──▶ RejectAtLimit (final)
                                  └─ "Borrowing limit reached (max 3 books)"
 ```
----
 
 ## Agents (5 types)
 
