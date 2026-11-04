@@ -29,16 +29,15 @@ This project is a multi-agent system built using **JADE** to manage a library sy
 2. Run `LibraryGUI.java`. This starts the GUI and the JADE platform.
 
 
-## What It Contains
+## Features
 
-The GUI has buttons for borrowing, returning, recommendations, check overdue books, check fines, inventory report, user stats, adding books, and popular books.
-You type a user ID and a book title, then press the button you want.
-Recommendations are based on the user’s favourite genre from `users.txt`.
-Overdue books are checked automatically every 20 seconds, and an alert appears in the console: [ALERT] Book overdue: <title> | Borrowed by: userName (ID: userId) | Due: dueDate
-You can also press “Check Overdue Books” to see overdue books for a specific user.
-Fines are $0.50 per day late and are saved in `fines.txt`.
-The inventory agent tracks how many copies of each book are available and alerts when stock is low (less than 3 copies).
-The analytics agent records every borrow and return in `borrow_history.txt` and shows popular books and user statistics.
+- The GUI has buttons for borrowing, returning, recommendations, check overdue books, check fines, inventory report, user stats, adding books, and popular books. You type a user ID and a book title, then press the button you want.
+- Recommendations are based on the user’s favourite genre from `users.txt`.
+-Overdue books are checked automatically every 20 seconds, and an alert appears in the console: [ALERT] Book overdue: <title> | Borrowed by: userName (ID: userId) | Due: dueDate
+- You can also press “Check Overdue Books” to see overdue books for a specific user.
+- Fines are $0.50 per day late and are saved in `fines.txt`.
+- The inventory agent tracks how many copies of each book are available and alerts when stock is low (less than 3 copies).
+- The analytics agent records every borrow and return in `borrow_history.txt` and shows popular books and user statistics.
 
 The FSM in BookManagerAgent makes decisions in sequence:
 1. Is the book available? -> if no, reject immediately.
